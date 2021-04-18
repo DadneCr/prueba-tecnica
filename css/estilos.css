@@ -1,0 +1,310 @@
+@font-face {
+    font-family: 'RalewayM';
+    src: url('fonts/Raleway/Raleway-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RalewayBlack';
+    src: url('fonts/Raleway/Raleway-Black.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*max-width: 1600px;
+     min-width: 1000px;*/
+    background: url(../img/background-pc.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:  100%;
+}
+/*MOVIL*/
+@media(max-width:1199px){
+
+    body{  
+        background: url(../img/background-movil.png);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size:  100%;
+    }
+}
+span{
+    color: #c3007b;
+    font-family: RalewayBlack;
+}
+header .contenedor-header{
+    margin-left: 10%;
+}
+header .titulo-principal{
+    background-color: #c3007b;
+    font-family: RalewayBlack;
+    color: #fff;
+    text-align: center;
+    padding: 5px;   
+    font-size: 19px;
+    width: 25%; 
+    margin-bottom: 20px;
+
+}
+header .titulo-secundario{
+    font-family: RalewayBold;
+    font-weight: lighter;
+    font-size: 30px;
+    padding-bottom: 10px;
+    width: 45%;
+    
+    color: #4a4a4a;  
+    border-bottom-color: #c3007b;
+    border-bottom-style: solid ; 
+    margin-bottom: 30px;  
+}
+/*MOVIL*/
+@media(max-width:1199px){
+    header .contenedor-header{
+        margin-left: 5%;
+    }
+    header .titulo-principal{
+        font-size: 10px;
+        width: 50%; 
+    }
+    header .titulo-secundario{
+    
+        font-size: 20px;
+        width: 90%;
+        
+    }
+
+}
+footer{
+    background-color: #c3007b;
+    margin-top: 50px;
+}
+footer .contenedor-footer{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    padding: 20px;
+}
+footer .contenedor-footer .contenido-principal{
+    font-family:  RalewayM;
+    font-size: 35px;
+    margin-right: 20px;
+    padding: 5px;
+    padding-right: 10px;
+    border-right-style: solid;
+}
+footer .contenedor-footer .contenido-secundario{
+    font-family:  RalewayM;
+}
+/*MOVIL*/
+@media(max-width:1199px){
+    footer .contenedor-footer{
+        display: inherit;      
+    }
+    footer .contenedor-footer .contenido-principal{
+        text-align: center;
+        border-right-style: none;
+        margin-bottom: 10px;
+    }
+    footer .contenedor-footer .contenido-secundario{
+        text-align: center;
+    }
+}
+/**************************************
+            Login 
+**************************************/
+#login{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
+#login .contenedor-login{
+    background-color: rgba(255, 255, 255, 0.472);
+    width: 30%;
+    padding: 30px;
+    border-style: solid;
+    border-color: #c3007b;
+}
+ .encabezado-formulario{
+    font-size: 19px;
+    font-family: RalewayBold;
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: #b63e8aab;
+    margin-bottom: 20px;
+}
+.formulario{
+    font-size: 15px;
+    font-family: RalewayM;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #b63e8aab;
+    margin-bottom: 20px;
+    
+}
+.formulario input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.formulario button{
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #c3007b;
+    border: none;
+}
+.footer-formulario button{
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding: 10px;
+    color: #4a4a4a;
+    background-color: #fff;
+    border-color: #c3007b;
+    
+}
+.footer-formulario a{
+    text-decoration: underline;
+    color: #4a4a4a;
+}
+
+/*MOVIL*/
+@media(max-width:1199px){
+    #login{
+        display: initial;
+        justify-content: center;
+    }
+    #login .contenedor-login{
+        width: 70%;
+        margin: auto;
+      
+    }
+}
+/**************************************
+           END Login 
+**************************************/
+
+/**************************************
+            PRESENTADOR
+**************************************/
+.presentador img{
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: #c3007b 5px solid;
+    margin-bottom: 20px;
+}
+
+.presentador {
+    font-size: 20px;
+    font-family: RalewayM;
+}
+.p-dos{
+    font-weight: bold;
+}
+.p-tres{
+    font-size: 15px;
+    color: #c3007b;
+}
+
+/*************************
+        Webcast
+**************************/
+.contenedor-webcast{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+.contenedor-webcast img{
+    width: 650px;
+    height: 400px;
+}
+.contenedor-webcast video{
+    width: 650px;
+    height: 400px;
+}
+.contenedor-webcast button{
+    color: #c3007b;
+    border: #c3007b 1px solid;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+   
+}
+
+.final-webcast{
+    padding: 30px;
+    font-family: RalewayM;
+    width: 80%;
+    margin: auto;
+
+}
+.titulo-presentador{
+    color: #4a4a4a;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.descripcion-presentador{
+    color: #c3007b;
+    font-size: 20px;    
+}
+.container{
+    margin-top: 50px;
+    width: 400px;
+    height: 300px;
+}
+.container img{
+    width: 400px;
+    height: 300px;
+}
+.salir{
+    background-color: #c3007b;
+    margin-left: 1300px;
+    border: none;
+    margin-bottom: 10px;
+}
+/*MOVIL*/
+@media(max-width:1199px){
+    .contenedor-webcast{
+        display: initial;
+        justify-content:center;
+    }
+    .contenedor-webcast img{
+        margin-top: 30px;
+        width: 300px;
+        height: 300px;
+    }
+    .contenedor-webcast video{
+        width: 300px;
+        height: 300px;
+    }
+    .container{
+        width: 200px;
+        height: 200px;
+    }
+    .container img{
+        width: 300px;
+        height: 200px;
+    }
+    .salir{
+        margin-left: 70%;
+        
+    }
+    
+}
+
+/**************************
+    end webcats
+***************************/
